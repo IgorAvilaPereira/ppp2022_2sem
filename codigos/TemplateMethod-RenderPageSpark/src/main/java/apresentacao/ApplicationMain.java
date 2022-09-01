@@ -24,9 +24,9 @@ public class ApplicationMain {
         staticFiles.location("/public");
         
         Map map = new HashMap();
-        map.put("name", "Sam");
+        map.put("name", "igor");
 
-        get("/hello", (rq, rs) -> new ModelAndView(map, "hello.mustache"), new MustacheTemplateEngine());
+        get("/hello", (rq, rs) -> new ModelAndView(map, "hello.html"), new MustacheTemplateEngine());
         get("/", (request, response) -> new PaginaCliente().renderHTML());
     }
 

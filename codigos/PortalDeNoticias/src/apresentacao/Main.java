@@ -20,6 +20,8 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+//        var i = 1;
+//        var p = new Portal();
         Portal portal = new Portal();
         PessoaFisica igor = new PessoaFisica();
         igor.setNome("Igor");
