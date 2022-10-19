@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="474px" preserveAspectRatio="none" style="width:1387px;height:474px;background:#FFFFFF;" version="1.1" viewBox="0 0 1387 474" width="1387px" zoomAndPan="magnify"><defs/><g><!--MD5=[f45f2220b0b110c1551a8318691639c0]
+class Beverage--><g id="elem_Beverage"><rect codeLine="5" fill="#F1F1F1" height="107.4844" id="Beverage" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="184" x="214" y="214"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="67" x="272.5" y="231.9951">Beverage</text><line style="stroke:#181818;stroke-width:0.5;" x1="215" x2="397" y1="240.2969" y2="240.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="138" x="220" y="257.292">#description: String</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="99" x="220" y="273.5889">#cost: double</text><line style="stroke:#181818;stroke-width:0.5;" x1="215" x2="397" y1="280.8906" y2="280.8906"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="172" x="220" y="297.8857">+getDescription(): String</text><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="108" x="220" y="314.1826">+cost(): double</text></g><!--MD5=[8db1e71afe3fc67a239e81af71b3e2c9]
+class CondimentDecorator--><g id="elem_CondimentDecorator"><rect codeLine="11" fill="#F1F1F1" height="50.5938" id="CondimentDecorator" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="314" x="539" y="46"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacing" textLength="145" x="623.5" y="63.9951">CondimentDecorator</text><line style="stroke:#181818;stroke-width:0.5;" x1="540" x2="852" y1="72.2969" y2="72.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="302" x="545" y="89.292">+CondimentDecorator(Beverage beverage)</text></g><g id="elem_GMN6"><path d="M888.5,44 L888.5,67.5 L853.05,71.5 L888.5,75.5 L888.5,99.3984 A0,0 0 0 0 888.5,99.3984 L1267.5,99.3984 A0,0 0 0 0 1267.5,99.3984 L1267.5,54 L1257.5,44 L888.5,44 A0,0 0 0 0 888.5,44 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1257.5,44 L1257.5,54 L1267.5,54 L1257.5,44 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="322" x="894.5" y="61.0669">public CondimentDecorator (Beverage beverage){</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="170" x="910.5" y="76.1997">this.beverage = beverage;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="894.5" y="91.3325">}</text></g><g id="elem_GMN9"><path d="M6,6 L6,137.0625 A0,0 0 0 0 6,137.0625 L504,137.0625 A0,0 0 0 0 504,137.0625 L504,75.5 L538.79,71.5 L504,67.5 L504,16 L494,6 L6,6 A0,0 0 0 0 6,6 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M494,6 L494,16 L504,16 L494,6 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="12" y="23.0669">@Override</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="198" x="12" y="38.1997">public String getDescription (){</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="461" x="28" y="53.3325">return super.getDescription()+"\n"+this.beverage.getDescription()+"\n";</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="12" y="68.4653">}</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="67" x="12" y="83.5981">@Override</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="137" x="12" y="98.731">public double cost (){</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="263" x="28" y="113.8638">return super.cost()+this.beverage.cost();</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="12" y="128.9966">}</text></g><!--MD5=[11eebef526f6d7fb1103e4a4656375de]
+class Sugar--><g id="elem_Sugar"><rect codeLine="30" fill="#F1F1F1" height="50.5938" id="Sugar" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="209" x="473.5" y="242"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="558" y="259.9951">Sugar</text><line style="stroke:#181818;stroke-width:0.5;" x1="474.5" x2="681.5" y1="268.2969" y2="268.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="197" x="479.5" y="285.292">+Sugar(Beverage beverage)</text></g><g id="elem_GMN14"><path d="M461.5,382 L461.5,467.6641 A0,0 0 0 0 461.5,467.6641 L712.5,467.6641 A0,0 0 0 0 712.5,467.6641 L712.5,392 L702.5,382 L588.56,382 L579.43,293.14 L580.56,382 L461.5,382 A0,0 0 0 0 461.5,382 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M702.5,382 L702.5,392 L712.5,392 L702.5,382 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="226" x="467.5" y="399.0669">public Sugar (Beverage beverage){</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="483.5" y="414.1997">super(beverage);</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="168" x="483.5" y="429.3325">this.description = "Sugar";</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="97" x="483.5" y="444.4653">this.cost = 1.0;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="467.5" y="459.5981">}</text></g><!--MD5=[100525086f0e815ee31f4f59acfdddec]
+class Milk--><g id="elem_Milk"><rect codeLine="41" fill="#F1F1F1" height="50.5938" id="Milk" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="195" x="717.5" y="242"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="26" x="802" y="259.9951">Milk</text><line style="stroke:#181818;stroke-width:0.5;" x1="718.5" x2="911.5" y1="268.2969" y2="268.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="183" x="723.5" y="285.292">+Milk(Beverage beverage)</text></g><g id="elem_GMN19"><path d="M747.5,382 L747.5,467.6641 A0,0 0 0 0 747.5,467.6641 L984.5,467.6641 A0,0 0 0 0 984.5,467.6641 L984.5,392 L974.5,382 L856.19,382 L823.08,293.14 L848.19,382 L747.5,382 A0,0 0 0 0 747.5,382 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M974.5,382 L974.5,392 L984.5,392 L974.5,382 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="212" x="753.5" y="399.0669">public Milk (Beverage beverage){</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="110" x="769.5" y="414.1997">super(beverage);</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="154" x="769.5" y="429.3325">this.description = "Milk";</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="97" x="769.5" y="444.4653">this.cost = 2.0;</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="8" x="753.5" y="459.5981">}</text></g><!--MD5=[1d657684344ca27a012d5cb815ad43ed]
+class Soy--><g id="elem_Soy"><rect codeLine="51" fill="#F1F1F1" height="50.5938" id="Soy" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="194" x="948" y="242"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="25" x="1032.5" y="259.9951">Soy</text><line style="stroke:#181818;stroke-width:0.5;" x1="949" x2="1141" y1="268.2969" y2="268.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="182" x="954" y="285.292">+Soy(Beverage beverage)</text></g><g id="elem_GMN24"><path d="M1028.5,412.5 L1028.5,437.6328 A0,0 0 0 0 1028.5,437.6328 L1061.5,437.6328 A0,0 0 0 0 1061.5,437.6328 L1061.5,422.5 L1051.5,412.5 L1049,412.5 L1045,293.14 L1041,412.5 L1028.5,412.5 A0,0 0 0 0 1028.5,412.5 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1051.5,412.5 L1051.5,422.5 L1061.5,422.5 L1051.5,412.5 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="12" x="1034.5" y="429.5669">...</text></g><!--MD5=[855bfe7603ce1fa68f47ee6242167d19]
+class Whip--><g id="elem_Whip"><rect codeLine="57" fill="#F1F1F1" height="50.5938" id="Whip" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="203" x="1177.5" y="242"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="1262" y="259.9951">Whip</text><line style="stroke:#181818;stroke-width:0.5;" x1="1178.5" x2="1379.5" y1="268.2969" y2="268.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="191" x="1183.5" y="285.292">+Whip(Beverage beverage)</text></g><g id="elem_GMN29"><path d="M1262.5,412.5 L1262.5,437.6328 A0,0 0 0 0 1262.5,437.6328 L1295.5,437.6328 A0,0 0 0 0 1295.5,437.6328 L1295.5,422.5 L1285.5,412.5 L1283,412.5 L1279,293.14 L1275,412.5 L1262.5,412.5 A0,0 0 0 0 1262.5,412.5 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><path d="M1285.5,412.5 L1285.5,422.5 L1295.5,422.5 L1285.5,412.5 " fill="#FEFFDD" style="stroke:#181818;stroke-width:0.5;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="12" x="1268.5" y="429.5669">...</text></g><!--MD5=[f5ea9ff06fc8109cace2c9440d07df67]
+class Espresso--><g id="elem_Espresso"><rect codeLine="71" fill="#F1F1F1" height="26.2969" id="Espresso" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="71" x="42.5" y="412"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="65" x="45.5" y="429.9951">Espresso</text></g><!--MD5=[4188fab1d5603701389174163c352652]
+class Decaf--><g id="elem_Decaf"><rect codeLine="72" fill="#F1F1F1" height="26.2969" id="Decaf" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="46" x="149" y="412"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="40" x="152" y="429.9951">Decaf</text></g><!--MD5=[3adeb8856ed00ccb2acee62dc8538854]
+class DarkHost--><g id="elem_DarkHost"><rect codeLine="73" fill="#F1F1F1" height="26.2969" id="DarkHost" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="70" x="230" y="412"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="64" x="233" y="429.9951">DarkHost</text></g><!--MD5=[bd7e272a4a95bdce642fcc687eddedc1]
+class HouseBlend--><g id="elem_HouseBlend"><rect codeLine="74" fill="#F1F1F1" height="26.2969" id="HouseBlend" rx="2.5" ry="2.5" style="stroke:#181818;stroke-width:0.5;" width="91" x="335.5" y="412"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="85" x="338.5" y="429.9951">HouseBlend</text></g><!--MD5=[520e3a59fb10c3c044ab0f1ed697dfb8]
+reverse link Beverage to CondimentDecorator--><g id="link_Beverage_CondimentDecorator"><path d="M416.78,219.16 C441.71,208.02 467.91,195.9 492,184 C548.81,155.93 612.67,120.36 653.56,97.04 " fill="none" id="Beverage-backto-CondimentDecorator" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="419.59,225.58,398.47,227.29,413.91,212.78,419.59,225.58" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[1779bfee0771b6da82d431b0aafabeca]
+link CondimentDecorator to Beverage--><g id="link_CondimentDecorator_Beverage"><path codeLine="14" d="M631.91,97.15 C598.93,109.57 557.99,124.59 521,137 C477.41,151.62 462.31,144.89 422,167 C400.8,178.62 380,194.58 362,210.3 " fill="none" id="CondimentDecorator-to-Beverage" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="#181818" points="357.96,213.87,367.3498,210.8982,361.7033,210.5553,362.0462,204.9088,357.96,213.87" style="stroke:#181818;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="60" x="423" y="180.0669">beverage</text></g><!--MD5=[9216f01700f5d731795fbea36cee7bf3]
+reverse link CondimentDecorator to Sugar--><g id="link_CondimentDecorator_Sugar"><path d="M670.59,114.28 C646.95,153.14 612.54,209.72 593.01,241.82 " fill="none" id="CondimentDecorator-backto-Sugar" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="664.68,110.52,681.06,97.07,676.64,117.8,664.68,110.52" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[e0b40310d863662c60be0a585fc86e22]
+reverse link CondimentDecorator to Milk--><g id="link_CondimentDecorator_Milk"><path d="M721.63,114.28 C745.46,153.14 780.17,209.72 799.86,241.82 " fill="none" id="CondimentDecorator-backto-Milk" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="715.56,117.78,711.07,97.07,727.5,110.46,715.56,117.78" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[b2f35954bc03414be1fa3899b002b144]
+reverse link CondimentDecorator to Soy--><g id="link_CondimentDecorator_Soy"><path d="M757.84,106.87 C827.62,145.66 939.39,207.79 1000.88,241.98 " fill="none" id="CondimentDecorator-backto-Soy" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="754.28,112.91,740.2,97.07,761.08,100.67,754.28,112.91" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[4f2329419c5f4da4a439c67d0b584d15]
+reverse link CondimentDecorator to Whip--><g id="link_CondimentDecorator_Whip"><path d="M777.36,104.25 C806.67,115.22 840.13,127.21 871,137 C997.29,177.06 1033.95,170.21 1159,214 C1181.86,222 1206.46,232.43 1227.41,241.89 " fill="none" id="CondimentDecorator-backto-Whip" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="774.52,110.66,758.29,97.04,779.47,97.57,774.52,110.66" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[9ab9d4bf547d7982b0339bff1cafba9c]
+reverse link Beverage to Espresso--><g id="link_Beverage_Espresso"><path d="M204.26,332.17 C179.96,348.01 154.31,365.26 131,382 C117.65,391.59 103.05,403.25 92.56,411.85 " fill="none" id="Beverage-backto-Espresso" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="200.65,326.17,221.24,321.18,208.25,337.92,200.65,326.17" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[2043822e86ab2b7f3d53c168bf142118]
+reverse link Beverage to Decaf--><g id="link_Beverage_Decaf"><path d="M247.55,336.33 C222.86,364.98 196.59,395.47 182.46,411.86 " fill="none" id="Beverage-backto-Decaf" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="242.28,331.73,260.63,321.15,252.88,340.87,242.28,331.73" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[97c7543f1362ff64bc732dd6cf6e2fad]
+reverse link Beverage to DarkHost--><g id="link_Beverage_DarkHost"><path d="M286.96,340.7 C279.76,368.04 272.3,396.3 268.2,411.86 " fill="none" id="Beverage-backto-DarkHost" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="280.25,338.7,292.12,321.15,293.79,342.27,280.25,338.7" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[45d306746d61aae6853d584fda6d9989]
+reverse link Beverage to HouseBlend--><g id="link_Beverage_HouseBlend"><path d="M340.25,339.5 C353.61,367.21 367.53,396.07 375.15,411.86 " fill="none" id="Beverage-backto-HouseBlend" style="stroke:#181818;stroke-width:1.0;"/><polygon fill="none" points="333.78,342.2,331.39,321.15,346.39,336.12,333.78,342.2" style="stroke:#181818;stroke-width:1.0;"/></g><!--MD5=[21eae00fb0fb7db87ac15dcd230e8157]
+@startuml
+
+hide circle
+skinparam classAttributeIconSize 0
+
+abstract class Beverage {
+  # description: String
+  # cost: double  
+  + {abstract} getDescription(): String
+  + {abstract} cost(): double
+}
+abstract class CondimentDecorator extends Beverage {
+    + CondimentDecorator(Beverage beverage)
+}
+CondimentDecorator - -> Beverage : beverage
+note right of CondimentDecorator
+    public CondimentDecorator (Beverage beverage){         
+        this.beverage = beverage;
+    }
+end note
+note left of CondimentDecorator
+    @Override
+    public String getDescription (){         
+        return super.getDescription()+"\n"+this.beverage.getDescription()+"\n";
+    } 
+    @Override
+    public double cost (){         
+        return super.cost()+this.beverage.cost();
+    }
+end note
+class Sugar extends CondimentDecorator {
+    + Sugar(Beverage beverage)
+}
+note bottom of Sugar
+    public Sugar (Beverage beverage){ 
+        super(beverage); 
+        this.description = "Sugar";
+        this.cost = 1.0;
+    } 
+end note
+ 
+class Milk extends CondimentDecorator {
+    + Milk(Beverage beverage)
+}
+note bottom of Milk
+    public Milk (Beverage beverage){ 
+        super(beverage); 
+        this.description = "Milk";
+        this.cost = 2.0;
+    } 
+end note
+class Soy extends CondimentDecorator {
+    + Soy(Beverage beverage)
+}
+note bottom of Soy
+    ...
+end note
+class Whip extends CondimentDecorator {
+    + Whip(Beverage beverage)
+}
+note bottom of Whip
+    ...
+end note
+/'
+class Mocha extends CondimentDecorator {
+    + Mocha(Beverage beverage)
+}
+note bottom of Mocha
+    ...
+end note
+'/
+class Espresso extends Beverage
+class Decaf extends Beverage
+class DarkHost extends Beverage
+class HouseBlend extends Beverage
+
+
+hide empty members
+
+@enduml
+
+@startuml
+
+hide circle
+skinparam classAttributeIconSize 0
+
+abstract class Beverage {
+  # description: String
+  # cost: double  
+  + {abstract} getDescription(): String
+  + {abstract} cost(): double
+}
+abstract class CondimentDecorator extends Beverage {
+    + CondimentDecorator(Beverage beverage)
+}
+CondimentDecorator - -> Beverage : beverage
+note right of CondimentDecorator
+    public CondimentDecorator (Beverage beverage){         
+        this.beverage = beverage;
+    }
+end note
+note left of CondimentDecorator
+    @Override
+    public String getDescription (){         
+        return super.getDescription()+"\n"+this.beverage.getDescription()+"\n";
+    } 
+    @Override
+    public double cost (){         
+        return super.cost()+this.beverage.cost();
+    }
+end note
+class Sugar extends CondimentDecorator {
+    + Sugar(Beverage beverage)
+}
+note bottom of Sugar
+    public Sugar (Beverage beverage){ 
+        super(beverage); 
+        this.description = "Sugar";
+        this.cost = 1.0;
+    } 
+end note
+ 
+class Milk extends CondimentDecorator {
+    + Milk(Beverage beverage)
+}
+note bottom of Milk
+    public Milk (Beverage beverage){ 
+        super(beverage); 
+        this.description = "Milk";
+        this.cost = 2.0;
+    } 
+end note
+class Soy extends CondimentDecorator {
+    + Soy(Beverage beverage)
+}
+note bottom of Soy
+    ...
+end note
+class Whip extends CondimentDecorator {
+    + Whip(Beverage beverage)
+}
+note bottom of Whip
+    ...
+end note
+class Espresso extends Beverage
+class Decaf extends Beverage
+class DarkHost extends Beverage
+class HouseBlend extends Beverage
+
+
+hide empty members
+
+@enduml
+
+PlantUML version 1.2022.7(Mon Aug 22 14:01:30 BRT 2022)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

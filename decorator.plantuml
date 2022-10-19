@@ -1,0 +1,78 @@
+@startuml
+
+hide circle
+skinparam classAttributeIconSize 0
+
+abstract class Beverage {
+  # description: String
+  # cost: double  
+  + {abstract} getDescription(): String
+  + {abstract} cost(): double
+}
+abstract class CondimentDecorator extends Beverage {
+    + CondimentDecorator(Beverage beverage)
+}
+CondimentDecorator --> Beverage : beverage
+note right of CondimentDecorator
+    public CondimentDecorator (Beverage beverage){         
+        this.beverage = beverage;
+    }
+end note
+note left of CondimentDecorator
+    @Override
+    public String getDescription (){         
+        return super.getDescription()+"\n"+this.beverage.getDescription()+"\n";
+    } 
+    @Override
+    public double cost (){         
+        return super.cost()+this.beverage.cost();
+    }
+end note
+class Sugar extends CondimentDecorator {
+    + Sugar(Beverage beverage)
+}
+note bottom of Sugar
+    public Sugar (Beverage beverage){ 
+        super(beverage); 
+        this.description = "Sugar";
+        this.cost = 1.0;
+    } 
+end note
+ 
+class Milk extends CondimentDecorator {
+    + Milk(Beverage beverage)
+}
+note bottom of Milk
+    public Milk (Beverage beverage){ 
+        super(beverage); 
+        this.description = "Milk";
+        this.cost = 2.0;
+    } 
+end note
+class Soy extends CondimentDecorator {
+    + Soy(Beverage beverage)
+}
+note bottom of Soy
+    ...
+end note
+class Whip extends CondimentDecorator {
+    + Whip(Beverage beverage)
+}
+note bottom of Whip
+    ...
+end note
+class Mocha extends CondimentDecorator {
+    + Mocha(Beverage beverage)
+}
+note bottom of Mocha
+    ...
+end note
+class Espresso extends Beverage
+class Decaf extends Beverage
+class DarkHost extends Beverage
+class HouseBlend extends Beverage
+
+
+hide empty members
+
+@enduml
