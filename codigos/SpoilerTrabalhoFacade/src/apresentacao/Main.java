@@ -4,6 +4,7 @@
  */
 package apresentacao;
 
+import log.Log2;
 import java.sql.SQLException;
 import modelo.Cliente;
 import modelo.Endereco;
@@ -21,19 +22,23 @@ public class Main {
      */
     public static void main(String[] args) throws SQLException {
         
-        Cliente victor = new Cliente();
-        victor.setNome("victor");
-        victor.setCpf("66666666666");
-        new ClienteDAO().inserir(victor);
+         Log2.instance.registraLog("oi");
+                  Log2.instance.registraLog("ola");
+
         
-        Endereco endereco = new Endereco();
-        endereco.setCliente(victor);
-        victor.getVetEndereco().add(endereco);
-        endereco.setRua("aquidaban");
-        endereco.setBairro("cidade nova");
-        endereco.setComplemento("perto da unimed");
-        endereco.setNro("123");
-        new EnderecoDAO().inserir(endereco);
+//        Cliente victor = new Cliente();
+//        victor.setNome("victor");
+//        victor.setCpf("66666666666");
+//        new ClienteDAO().inserir(victor);
+//        
+//        Endereco endereco = new Endereco();
+//        endereco.setCliente(victor);
+//        victor.getVetEndereco().add(endereco);
+//        endereco.setRua("aquidaban");
+//        endereco.setBairro("cidade nova");
+//        endereco.setComplemento("perto da unimed");
+//        endereco.setNro("123");
+//        new EnderecoDAO().inserir(endereco);
         
 //        Cliente sergio = new Cliente();
 //        sergio.setCpf("1111111111");
