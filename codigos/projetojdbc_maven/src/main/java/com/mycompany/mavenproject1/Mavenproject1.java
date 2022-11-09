@@ -14,9 +14,12 @@ import java.sql.SQLException;
  */
 public class Mavenproject1 {
 
-    public static void main(String[] args) throws SQLException {
-        
+    public static void main(String[] args) {        
         String dbname = "postgres";
-        DriverManager.getConnection("jdbc:postgresql://localhost:5432/"+dbname, "postgres", "postgres");
+        try {
+            DriverManager.getConnection("jdbc:postgresql://localhost:5432/"+dbname, "postgres", "postgres");
+        } catch (SQLException e){
+            System.out.println("ERRO DE CONEXAO!");
+        }
     }
 }
