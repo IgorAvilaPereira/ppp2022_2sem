@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
 
-package com.mycompany.apresentacao;
+package apresentacao;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -18,6 +18,7 @@ public class Main {
         String dbname = "postgres";
         try {
             DriverManager.getConnection("jdbc:postgresql://localhost:5432/"+dbname, "postgres", "postgres");
+            System.out.println("CONECTADO COM SUCESSO!");
         } catch (SQLException e){
             System.out.println("ERRO DE CONEXAO!");
         }
