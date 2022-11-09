@@ -3,7 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
  */
 
-package com.mycompany.mavenproject1;
+package com.mycompany.apresentacao;
 
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -12,7 +12,7 @@ import java.sql.SQLException;
  *
  * @author iapereira
  */
-public class Mavenproject1 {
+public class Main {
 
     public static void main(String[] args) {        
         String dbname = "postgres";
